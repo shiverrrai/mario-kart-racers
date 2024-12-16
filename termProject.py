@@ -181,13 +181,13 @@ def runGame(width, height, background, screen):
 	if(track==1):
 		gameObjects=track1_GameObjects
 		bananaList=[]
-		for i in xrange(15): #place 15 bananas on track
+		for i in range(15): #place 15 bananas on track
 			b=Track1.Banana()
 			bananaList.append(b)
 	elif(track==2):
 		gameObjects=track2_GameObjects
 		bananaList=[]
-		for i in xrange(15):
+		for i in range(15):
 			b=Track2.Banana()
 			bananaList.append(b)
 	bananas=pygame.sprite.Group((bananaList))

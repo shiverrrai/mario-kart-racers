@@ -163,7 +163,7 @@ class RaceTrack(pygame.sprite.Sprite):
 	#decreases car's speed when off racetrack
 	def offCourse(self):
 		#(x,y) is car's location relative to track
-		(x,y)=(self.carLocationX-self.rect.x,self.carLocationY-self.rect.y)
+		(x,y)=(int(self.carLocationX-self.rect.x), int(self.carLocationY-self.rect.y))
 		if(self.image.get_at((x,y))!=self.courseRGBA1 and 
 			self.image.get_at((x,y))!=self.courseRGBA2):
 			return True
